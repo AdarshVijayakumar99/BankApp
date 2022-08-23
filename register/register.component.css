@@ -1,0 +1,23 @@
+.login,
+.image {
+  min-height: 100vh;
+}
+.bg-image {
+  background-image:url(/assets/images/abc.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+h3
+{
+  color: azure;
+  padding-top: 50px;
+}
+.err
+{
+  color: rgb(231, 10, 10);
+}
+#right
+{
+  
+  background: linear-gradient(to bottom, #0f0c29, #6a6781, #24243e);
+}

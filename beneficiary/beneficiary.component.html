@@ -1,0 +1,66 @@
+<header class="header-area header-sticky">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="index.html" class="logo">
+                      MULTIBANK 
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                      <li class="scroll-to-section"><a href="/home" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="/home">About</a></li>
+                      <li class="scroll-to-section"><a href="/home">Contact Us</a></li> 
+                      <a href="/login" class="main-filled-button" >Logout</a>
+                     
+                      
+                      
+                  </ul>   
+                       
+                  <a class='menu-trigger'>
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+
+<section class="whole">
+<div class="naaa">
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true"> Register New Beneficiary</label>
+          <a href="/maindashboard" id="hi" class="main-filled-button" >Back to Main Dashboard</a>
+          <input matInput placeholder="Name" name ="name" [(ngModel)]="benefobj.Name">
+					<input matInput placeholder="Bank" name ="Bank" [(ngModel)]="benefobj.Bank">
+          <input matInput placeholder="Account Number" name ="Account Number" [(ngModel)]="benefobj.Accno">
+          <input matInput placeholder="IFSC" name ="IFSC" [(ngModel)]="benefobj.IFSC">
+          <input matInput placeholder="Mobile number" name ="bmob" [(ngModel)]="benefobj.Mob">
+          <input matInput placeholder="Your Username" name ="uname" [(ngModel)]="benefobj.User">
+					
+					<button mat-button (click)="addbenefi()">Add Beneficiary</button>
+          <!-- <button mat-button (click)="transbenef()">View All Beneficiaries</button>  -->
+          <!-- <button mat-button (click)="transbenef()">Beneficiary Transactions</button> -->
+          
+          
+     
+          
+				</form>
+        
+  
+
+			</div>
+
+	
+	</div>
+
+  
+</div>
+</section>

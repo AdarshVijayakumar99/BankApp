@@ -1,0 +1,78 @@
+<section class="last">
+<header class="header-area header-sticky">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="index.html" class="logo">
+                      MULTIBANK 
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                      <li class="scroll-to-section"><a href="/home" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="/home">About</a></li>
+                      <li class="scroll-to-section"><a href="/home">Contact Us</a></li> 
+                      <a href="/login" class="main-filled-button" >Logout</a>
+                     
+                      
+                      
+                  </ul>   
+                       
+                  <a class='menu-trigger'>
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+
+    <div class="clsview">
+      
+      <a href="/maindashboard" class="main-filled-button" >Back to Main Dashboard</a>
+    </div>
+
+
+    <div class="clscard">
+
+      <mat-card class="clsmat">
+    <mat-card-header>
+      <mat-card-title class="one">Cummulative Balance</mat-card-title>
+
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+       Balance: {{sum}}
+      </p>
+
+    </mat-card-content>
+
+      </mat-card>
+    </div>
+    <button mat-button (click) = "showbank()" mat-raised-button color ="primary">Banks</button>
+    <div class="clscard">
+      
+
+      <mat-card *ngFor="let benef of mybeneficiary1" class="clscd">
+
+
+        <mat-card-header>
+          <mat-card-title>{{benef.Name}} - {{benef.Bank}}</mat-card-title>
+          <mat-card-subtitle class="acc">A/C No : {{benef.Accno}}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <ul>
+            <li>IFSC : {{benef.IFSC}}</li>
+            <li>Balance : {{benef.Balance}}</li>
+          </ul>
+        </mat-card-content>
+        <!--<button (click)= "updatemybenef()">Update details</button>
+        <button  (click) = "deletemybenef()">Delete Beneficiary</button>-->
+      </mat-card>
+
+    </div>
+  </section>

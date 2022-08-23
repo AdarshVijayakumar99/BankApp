@@ -1,0 +1,48 @@
+
+
+.cls-toggle-view {
+	width: 80%;
+	margin-left: 50%;
+	cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  
+}
+button
+{
+	background-color: rgba(6, 128, 243, 0.685);
+	color: whitesmoke;
+	
+}
+button:hover
+{
+ background-color: green;	
+}
+.imgbg
+{
+	width: 200px;
+	height: 65px;
+	margin: 0%;
+	padding-right: 10px;
+	
+}
+
+.clsmat
+{
+	background-image: linear-gradient(to right ,rgb(118, 202, 219),rgb(125, 125, 230));
+	margin: 0%;
+}
+span{
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: xx-large;
+	font: bolder;
+}
+.nav
+{
+	color: black;
+}
+.logo
+{
+	color:black;
+}
